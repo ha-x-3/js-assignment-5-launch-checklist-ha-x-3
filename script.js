@@ -12,8 +12,8 @@ window.addEventListener("load", function() {
     let chosenPlanet = pickPlanet(listedPlanets);
     console.log(chosenPlanet);
 
-    let destinationInfo = addDestinationInfo(docment, chosenPlanet.name, chosenPlanet.diameter, chosenPlanet.star, chosenPlanet.distance, chosenPlanet.moons, chosenPlanet.image);
-    console.log(destinationInfo);
+    addDestinationInfo(window.document, chosenPlanet.name, chosenPlanet.diameter, chosenPlanet.star, chosenPlanet.distance, chosenPlanet.moons, chosenPlanet.image);
+    
     });
     let form = document.querySelector("form");
     let pilotName = document.querySelector("input[name=pilotName]");
