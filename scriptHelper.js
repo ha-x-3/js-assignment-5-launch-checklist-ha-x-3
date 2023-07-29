@@ -14,7 +14,6 @@ function addDestinationInfo(document, name, diameter, star, distance, moons, ima
             </ol>
             <img src="${image}">
             `
-    return `Name: ${name}, Diameter: ${diameter}, Star: ${star}, Distance from Earth: ${distance}, Number of Moons: ${moons}, Image URL: "${image}"`
 }
 
 function validateInput(testInput) {
@@ -65,7 +64,7 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
         fuelStatus.textContent = "Fuel level too low for launch";
         cargoStatus.textContent = "Cargo mass low enough for launch";
         list.style.visibility = "visible";
-        return false;
+       return false;
     } else if (Number(cargoLevel) > 10000){
         launchStatusText.textContent = "Shuttle Not Ready for Launch";
         launchStatusStyle.style.color = "#C7254E"
@@ -93,10 +92,8 @@ async function myFetch() {
 }
 
 function pickPlanet(planets) {
-    for (let i = 0; i < planets.length; i++) {
-        let index = Math.floor(Math.random() * planets.length);
-        return planets[index];
-    }
+    let index = Math.floor(Math.random() * planets.length);
+    return planets[index];
 }
 
 module.exports.addDestinationInfo = addDestinationInfo;
