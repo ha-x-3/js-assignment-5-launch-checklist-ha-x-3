@@ -1,9 +1,22 @@
+body {
+   font-family: 'Space Grotesk', sans-serif;
+   background-image: url('./img/space.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+   color: white;
+}
+
 h1 {
    text-align: center;
+   margin-top: 25px;
 }
 
 div {
    text-align: left;
+}
+
+ol {
+   list-style: none;
 }
 
 #faultyItems {
@@ -11,33 +24,40 @@ div {
 }
 
 #launchForm {
-   background-color: #ECF0F1;
+   background-color: #2f4d6e;
    text-align: center;
    margin: auto;
-   width: 25%;
+   width: 40vw;
+   height: 35vh;
    border: 3px solid black;
    padding: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 #launchStatusCheck {
-   background-color: #ECF0F1;
+   background-color: #2f4d6e;
    text-align: center;
-   margin: 50px auto;
-   width: 50%;
+   margin: auto;
+   width: 40vw;
+   height: 35vh;
    border: 3px solid black;
    padding: 10px;
 }
 
 #missionTarget img {
-   max-width: 40%;
-   max-height: 250px;
+   max-width: 40vw;
+   max-height: 40vh;
+   box-shadow: 0 0 10px white;
 }
 
 #missionTarget {
-   background-color: #ECF0F1;
+   background-color: #2f4d6e;
    text-align: center;
    margin: 50px auto;
-   width: 50%;
+   width: 45vw;
+   height: 70vh;
    border: 3px solid black;
    padding: 10px;
 }
@@ -50,4 +70,36 @@ button {
    width: 25%;
    height: 30px;
    margin: 10px 0;
+}
+
+form {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+input {
+   margin-left: 25px;
+   display: inline-block;
+}
+
+.formField {
+   padding: 7px;
+}
+
+.wrapper {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.rightSide {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 50vw;
+   height: 73vh;
+   gap: 40px;
 }
